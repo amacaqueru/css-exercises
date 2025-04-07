@@ -2,16 +2,33 @@
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
+*{
+  /*outline: 2px solid red;*/
+  padding:0px;
+  margin:0px;
+}
+
 body {
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
+
+  display: flex;
+  justify-content: space-between;
+  
+  
 }
 
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  
 }
 
 .profile-image {
@@ -45,4 +62,19 @@ a {
 
 ul {
   list-style-type: none;
+
+  display:flex;
+  align-content: center;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.links{
+  display:flex;
+  gap: 10px;
 }
